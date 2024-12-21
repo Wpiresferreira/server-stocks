@@ -32,7 +32,8 @@ router.delete(
 //API Routes
 router.get("/profile/:symbol", authenticateToken, apiController.getStockProfile);
 router.get("/quote/:symbol", authenticateToken, apiController.getStockQuote);
-router.get("/symbols", authenticateToken, apiController.getStockSymbols);
+// router.get("/symbols", authenticateToken, apiController.getStockSymbols);
+router.get("/symbols", apiController.getStockSymbols);
 // // router.post('/addprogram',authenticateAdmin, programController.addProgram);
 // // router.post('/editprogram', authenticateAdmin, programController.editProgram);
 // // router.delete('/deleteprogram', authenticateAdmin, programController.deleteProgram);
