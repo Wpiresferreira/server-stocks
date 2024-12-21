@@ -1,0 +1,25 @@
+{
+  "name": "backend-node-stocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "postinstall": "cd ../frontend && npm install && npm run build"
+  },
+  "author": "Wagner Pires Ferreira",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vercel/postgres": "^0.10.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "finnhub": "^1.2.19",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9"
+  },
+  "type": "module"
+}
