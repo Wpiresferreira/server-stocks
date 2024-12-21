@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
+    "start": "node index.js",
     "postinstall": "cd ../frontend && npm install && npm run build"
   },
   "author": "Wagner Pires Ferreira",
@@ -19,7 +20,8 @@
     "express": "^4.21.2",
     "finnhub": "^1.2.19",
     "jsonwebtoken": "^9.0.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "vercel": "^39.2.2"
   },
   "type": "module"
 }
