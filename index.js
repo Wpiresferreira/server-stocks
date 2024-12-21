@@ -15,6 +15,12 @@ const __dirname = path.dirname(__filename);
 
 const origin = process.env.ORIGIN
 
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '.', 'components', 'home.htm'));
+});
+    
+
 const app = express();
 app.use(cors({ origin: origin, credentials: true,})) // Allow credentials
 
